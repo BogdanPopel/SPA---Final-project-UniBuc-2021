@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My Travel blog</title>
+</head>
+
+<body id="body">
+    <header></header>
+    <div class="container">
+        <nav class="nav">
+            <ul class="nav__container">
+                <li class="nav__item">
+                    <button class="nav__link" id="dish-link">All Recipes</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__link" id="about-link">About</button>
+                </li>
+            </ul>
+        </nav>
+       
+        <main id='main'>
+            <div class="add__container">
+                <button id="add" type="button" class="button"> Add Recipe </button>
+            </div>
+        </main>
+    </div>
+    <div class="modal__overlay">
+        <div class="modal">
+            <div class="modal__content">
+                <h2 class="title">Enter Your Recipe Bellow</h2>
+                <div class="inputs__container">
+                    <input id="formTitle" type="text" class="input" placeholder="Name of dish">
+                    <input id="formPortions" type="text" class="input" placeholder="No. of portions">
+                    <input id="formDuration" type="text" class="input" placeholder="Aprox. duration">
+                    <input id="formImgUrl" type="text" class="input input--img" placeholder="Image url">
+                </div>
+                <textarea id="formIngredients" class="textarea" name="content" cols="28" rows="10" placeholder="Please enter ingredients"></textarea>
+                <div class="modal__buttons">
+                    <button id="cancel" type="button" class="button button--pink">Cancel</button>
+                    <button id="save" type="button" class="button button--pink">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;PEM 2021</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
